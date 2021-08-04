@@ -14,3 +14,10 @@ https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA
 ou
 
 https://www.youtube.com/playlist?list=PLhkO7OMKgT_rqwGYldqcFxyN4yjFgmDh8
+
+O Relatórios do trabanho estão sendo produzidos no Overleaf, um editor LaTeX colaborativo. Os mesmos estão na pasta "Circuitos, Projeto 1".Para editar, o link se encontra na descrição do grupo do WhatsApp da equipe, "Equipe de Circuitos".
+
+-> DATAS E PRAZOS DE ENTREGA:
+Entrega 01: finaliza em 20/08/2021 às 23h 59
+Entrega 02: finaliza em 17/09/2021 às 23h 59
+Entrega 03: finaliza em 01/10/2021 às 23h 59
