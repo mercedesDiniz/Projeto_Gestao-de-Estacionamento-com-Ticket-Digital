@@ -19,5 +19,7 @@ O Relatórios do trabanho estão sendo produzidos no Overleaf, um editor LaTeX c
 
 -> DATAS E PRAZOS DE ENTREGA:
 Entrega 01: finaliza em 20/08/2021 às 23h 59
+
 Entrega 02: finaliza em 17/09/2021 às 23h 59
+
 Entrega 03: finaliza em 01/10/2021 às 23h 59
