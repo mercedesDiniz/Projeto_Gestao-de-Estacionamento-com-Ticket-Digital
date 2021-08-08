@@ -11,9 +11,6 @@ Caso vc não esteja familiarizado com o GITHUB, recomendo:
 Para o desenvolvimentos do Projeto, recomendo o simulador online Wokwi.
 1. Site do Wokwi: https://wokwi.com/
 
-2. Projeto para desenvolvimento compartilhado: https://wokwi.com/arduino/projects/306307951557083713
-
-
 O Relatórios do trabanho estão sendo produzidos no Overleaf, um editor LaTeX colaborativo. Os mesmos estão na pasta "Circuitos, Projeto 1". Para editar, o link se encontra na descrição do grupo do WhatsApp da equipe, "Equipe de Circuitos".
 
 
