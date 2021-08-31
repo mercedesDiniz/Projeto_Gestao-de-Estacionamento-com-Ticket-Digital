@@ -10,9 +10,16 @@
             Link: 
                 1. https://github.com/adafruit/Adafruit_SSD1306
                 2. https://www.arduino.cc/reference/en/libraries/adafruit-ssd1306/
+    
+    3. Para o Módulo RTC ds1307: RTClib (Autor: Adafruit) 
+            Link:
+                1. https://github.com/adafruit/RTClib 
+                2. https://www.arduino.cc/reference/en/libraries/rtclib/
 
 - Modelos Base:
 
     1. Dynamic QRcode on ssd1306-big-sram.ino (https://wokwi.com/arduino/projects/301360621680591373)
+
+    2. ds1307-basic.ino (https://wokwi.com/arduino/projects/305979285237137984)
 
   
