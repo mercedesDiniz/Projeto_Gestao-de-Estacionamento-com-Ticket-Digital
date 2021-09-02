@@ -1,5 +1,16 @@
 /* PROTOTIPO (ENTRADA) 
-Link: https://wokwi.com/arduino/projects/308268012530565698 */
+Link: https://wokwi.com/arduino/projects/308268012530565698 
+
+# REFERENCIAS:
+- Bibliotecas:
+    1. Para gerar Qrcode: qrcode (Autor: Richard Moore)
+    2. Para o Display: Adafruit_SSD1306 (Autor: Adafruit)
+    3. Para o Módulo RTC ds1307: RTClib (Autor: Adafruit) 
+
+- Modelos Base:
+    1. Dynamic QRcode on ssd1306-big-sram.ino (https://wokwi.com/arduino/projects/301360621680591373)
+    2. ds1307-basic.ino (https://wokwi.com/arduino/projects/305979285237137984)
+*/
 
 #include <Adafruit_SSD1306.h>
 #include <qrcode.h>
@@ -26,7 +37,7 @@ int dia, mes, ano, hora, minuto;
 char dia01[3], mes01[3], ano01[3], hora01[3], minuto01[3]; 
 
 const char* MESSAGE_DA_ENTRADA[4] = { ">Ticket<", "Tire com", "o App", "aqui:" };
-const char* INF_TICKET_BASE = {"Ticket\nStatus: Pendente\nEntrada: "};
+const char* INF_TICKET_BASE = {"TICKET\nStatus: Pendente\nEntrada: "};
 char* INF_TICKET;
 QRCode qrcode; // A estrutura para gerenciar o código QR
 
@@ -68,26 +79,25 @@ void loop() {
 
     // char * itoa (valor int, char * str, base int); converte int p/ char
     itoa(dia, dia01, 10); 
-    itoa(mes, mes01, 10); 
+    //itoa(mes, mes01, 10); // é aqui q o mes começa a dá erro! (mes01 é igual a 1)
     itoa(ano, ano01, 10); 
     itoa(hora, hora01, 10); 
     itoa(minuto, minuto01, 10);
 
     // Serial.print(diasDaSemana[dhAtual.dayOfTheWeek()]);
+    //Serial.println(mes);
+    //Serial.print(mes01);
 
     // Concatenando e formando a mensagem que será convertida em Qrcode:
     char* INF_TICKET = concat(INF_TICKET_BASE, dia01);
     INF_TICKET = concat(INF_TICKET, "/");
-    INF_TICKET = concat(INF_TICKET, mes01);
+    INF_TICKET = concat(INF_TICKET, "9"); // solução provisoria ate ajeitar o lance do mes
     INF_TICKET = concat(INF_TICKET, "/");
     INF_TICKET = concat(INF_TICKET, ano01);
     INF_TICKET = concat(INF_TICKET, " as ");
     INF_TICKET = concat(INF_TICKET, hora01);
     INF_TICKET = concat(INF_TICKET, "h");
     INF_TICKET = concat(INF_TICKET, minuto01);
-
-
-
 
     // o qr code com os dados do Ticket deve ser exibido no display
     display.clearDisplay();
@@ -106,7 +116,7 @@ void loop() {
 }
 
 
-// FUNÇAO (Ps.: descobrir como essa merda funciona - matriz )
+// Função para exibir o Qr code + mesagem na tela do Display:
 void mostrarQrCode(const char* qrStr, const char* lines[]) {
 	uint8_t qrcodeData[qrcode_getBufferSize(3)];
 	qrcode_initText(&qrcode, qrcodeData, 3, ECC_LOW, qrStr);
@@ -144,8 +154,8 @@ void mostrarQrCode(const char* qrStr, const char* lines[]) {
 // Função para concatenar :
 char* concat(char *s1, char *s2)
 {
-    char *result = malloc(strlen(s1) + strlen(s2) + 1); // +1 for the null-terminator
-    // in real code you would check for errors in malloc here
+    char *result = malloc(strlen(s1) + strlen(s2) + 1); // +1 para o terminador nulo
+    // em código real, você verificaria erros no malloc aqui
     strcpy(result, s1);
     strcat(result, s2);
     return result;
