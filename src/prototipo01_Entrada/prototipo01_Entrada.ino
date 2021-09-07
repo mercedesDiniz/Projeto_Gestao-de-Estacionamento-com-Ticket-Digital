@@ -79,7 +79,7 @@ void loop() {
 
     // char * itoa (valor int, char * str, base int); converte int p/ char
     itoa(dia, dia01, 10); 
-    //itoa(mes, mes01, 10); // é aqui q o mes começa a dá erro! (mes01 é igual a 1)
+    itoa(mes, mes01, 10); // é aqui q o mes começa a dá erro! (mes01 é igual a 1)
     itoa(ano, ano01, 10); 
     itoa(hora, hora01, 10); 
     itoa(minuto, minuto01, 10);
