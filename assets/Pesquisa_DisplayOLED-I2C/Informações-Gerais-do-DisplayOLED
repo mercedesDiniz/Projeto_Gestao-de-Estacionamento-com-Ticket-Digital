@@ -1,0 +1,24 @@
+# Informações Gerais sobre o Display OLED I2C
+
+Este display oled i2c azul amarelo 0.96 polegadas é uma opção muito interessante para quem busca visualizar pouca informação mas ainda com muita nitidez. Isso é possível devido ao alto contraste dos displays OLED (Organic Light-Emitting Diode).
+
+Cada um dos 128×64 pixels são controlados individualmente via I2C pelo chip controlador SSD1306. O display OLED tem luz própria, logo não há necessidade de backlight, o que intensifica seu contraste e economiza muita energia. Para facilitar a sua vida uma barra de 4 pinos já vem soldada e você pode conectar diretamente ao seu protoboard.
+
+ESPECIFICAÇÃO:
+    – Tensão de operação: 2,2-5,5V
+    – Controlador: SSD1306
+    – Cor: Azul e Amarelo
+    – Comunicação: I2C
+    – Resolução: 128×64
+    – Dimensões: 30 x 27mm
+    – Peso: 10g
+
+Pinagem:
+    – GND: GND
+    – VCC: 2,2-5,5V
+    – SCL: Clock (Nivel Alto 2,2-5,5V)
+    – SDA: Dados (Nivel Alto 2,2-5,5V)
+
+
+REFERENCIAS:
+    1. https://www.filipeflop.com/produto/display-oled-0-96-i2c-azul-amarelo/

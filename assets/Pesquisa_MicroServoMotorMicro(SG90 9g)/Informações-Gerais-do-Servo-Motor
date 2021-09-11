@@ -1,0 +1,15 @@
+# Informações Gerais sobre o Micro Servo Motor SG90 9g
+
+Ao utilizar o Micro Servo Motor SG90 9g é possível controlar o giro e a posição do mesmo através dos comandos enviados pela plataforma microcontrolada. Após o envio do comando para que o servo altere sua posição, o mesmo verifica sua posição atual e em seguida executa o comando girando até a posição indicada.
+
+ESPECIFICAÇÃO E CARACTERISTICAS:
+    – Modelo: SG90
+    – Marca do servo: Tower Pro
+    – Tensão de operação: 3 a 6VDC
+    – Posição (máxima): 180° de giro
+    – Material das engrenagens: nylon
+    – Temperatura de trabalho: -30º a 60º celsius
+    – Torque: 1,2 Kg/cm (4,8VDC) / 1,6 Kg/cm (6VDC)
+
+REFERENCIAS:
+    1. https://blogmasterwalkershop.com.br/arduino/como-usar-com-arduino-micro-servo-motor-sg90-9g
