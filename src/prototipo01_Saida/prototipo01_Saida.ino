@@ -1,5 +1,6 @@
 /* PROTOTIPO (SAIDA) 
-Link: 
+Link: https://wokwi.com/arduino/projects/309471439959884353
+  ou  https://wokwi.com/arduino/projects/309823083489788480
 
 # REFERENCIAS:
 - Bibliotecas:
